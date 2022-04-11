@@ -265,6 +265,7 @@
 
 #skills{
     background-color: var(--color-yellow);
+    padding: 30px;
 }
 
 .skillset{
@@ -362,6 +363,13 @@ flex-basis: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity:1;
+    transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anim-out{
+    opacity:0.6;
+    transform: scale(0.96) translateY(40px)
 }
 
 .project{
@@ -373,6 +381,10 @@ flex-basis: 40%;
     height: 250px;
     margin: 2px;
     background-color: var(--color-light-white);
+}
+
+.project.invisible{
+    display: none;
 }
 
 .project__img{
@@ -463,7 +475,7 @@ flex-basis: 40%;
 
 /* Contact */
 #contact{
-    background-color: var(--color-pink);
+    background-color: var(--color-blue);
 }
 
 .contact__title,
@@ -486,6 +498,29 @@ flex-basis: 40%;
     transform: scale(1.1);
     color: var(--color-yellow)
 }
+
+
+/* Scroll */
+.arrow-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border-radius: 50%;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    opacity: 0;
+    transition: all 300ms ease-in;
+    pointer-events: none;
+}
+
+.arrow-up.visible{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 /* For below 768px screen width */
 @media screen  and (max-width: 768px){
