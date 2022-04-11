@@ -25,6 +25,7 @@
             <i class="fab fa-diaspora"></i>
             <a href="#">Yomi</a>
         </div>
+        <div class="navbar__menu">
             <ul class="navbar__menu">
                 <li class="navbar__menu__item active">Home</li>
                 <li class="navbar__menu__item">About</li>
@@ -33,7 +34,13 @@
                 <li class="navbar__menu__item">Testimonial</li>
                 <li class="navbar__menu__item">Contact</li>
             </ul>
+        </div>
 
+
+    <!-- Toggle button-->
+    <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
     </nav>
 
     <!-- Home -->
@@ -167,14 +174,14 @@
                             <li><span>PowerBI</span></li>
                         </ul>
                     </div>
-                <div class="Etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>R</span></li>
-                        <li><span>Excel VBA</span></li>
-                    </ul>
-                </div>
+                    <div class="Etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>R</span></li>
+                            <li><span>Excel VBA</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -262,10 +269,11 @@
         </div>
     </section>
     <!-- testimonials -->
-    <section id="testimonials" class = "section">
-        <h1>Testimonals</h1>
+    <section id="testimonials" >
+        <div class="section__container">
+            <h1>Testimonals</h1>
         <h3>See what they say about me</h3>
-        <div class="testimonials">
+        <div class="testimonials" class = "section">
             <div class="testimonial">
                 <img src="imgs/testimonial/people.jpg" alt="People" class="testimonial__avatar">
                 <div class="testimonial__speach-bubble">
@@ -283,6 +291,8 @@
 
             </div>
         </div>
+        </div>
+        
     </section>
     <!-- contact -->
     <section id="contact" class = "section">
